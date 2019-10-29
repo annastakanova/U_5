@@ -44,7 +44,6 @@ public class BankAccount {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof BankAccount)) return false;
         BankAccount that = (BankAccount) o;
         return Objects.equals(bankAccountName, that.bankAccountName) &&
                 Objects.equals(userMoney, that.userMoney) &&
